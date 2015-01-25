@@ -2,8 +2,8 @@
 
 # Slackware build script for mkslack
 
-# Copyright 2010-11 David Woodfall <dave@dawoodfall.net>,
-#                   slakmagik <slakmagik@gmail.com>
+# Copyright 2010-11, 2015 David Woodfall <dave@dawoodfall.net>,
+#                   slakmagik <slakmagik@gmail.com>, Daniel Wilkins <tekk@parlementum.net>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,13 +24,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=mkslack
-VERSION=${VERSION:-4.0}
+VERSION=${VERSION:-`date +%d%m%y`}
 ARCH=noarch
 BUILD=${BUILD:-1}
-TAG=${TAG:-daw}
+TAG=${TAG:-tekk}
 
 CWD=$(pwd)
-TMP=${TMP:-/tmp/daw}
+TMP=${TMP:-/tmp/tekk}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
